@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+h1 {
+    color: #ff5733;
+}
+p {
+    color: #555;
+}
+form {
+    margin: 20px 0;
+}
+input[type="file"], input[type="text"], input[type="submit"], textarea {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #e04e2b;
+}
+h3 {
+    color: #555;
+}
+p.response {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+textarea {
+    height: 100px;
+}

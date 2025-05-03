@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mech Chatbot - Comps ka Banda</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Comps ka Banda Mech Bol Raha Hun! 😎</h1>
+    <p>Ek .docx file (jaise mechanical engineering notes) daal aur question pooch. Main mast Hinglish mein jawab dunga!</p>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="file">.docx File Daal:</label><br>
+        <input type="file" name="file" accept=".docx" required><br>
+        <label for="question">Question Pooch:</label><br>
+        <input type="text" name="question" placeholder="Jaise, Mechanical engineering kya hai?" required><br>
+        <input type="submit" value="Bolo, Kya Hai Tera Sawal?">
+    </form>
+    {% if response %}
+        <h3>Jawab Dekh, Bhai:</h3>
+        <p class="response">{{ response | safe }}</p>
+        <h3>Feedback Daal De:</h3>
+        <form action="/feedback" method="POST">
+            <textarea name="feedback" placeholder="Bhai, jawab kaisa laga? Bolo na!" required></textarea><br>
+            <input type="submit" value="Feedback Bhej">
+        </form>
+    {% endif %}
+</body>
+</html>

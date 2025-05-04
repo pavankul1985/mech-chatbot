@@ -13,4 +13,4 @@ A Flask-based chatbot that processes `.docx` files (e.g., mechanical engineering
 ## Setup Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/mech-chatbot.git
+   git clone https://github.com/yourusername/mech-chatbot.git"## About\nHinglish chatbot for mech engineering" 
